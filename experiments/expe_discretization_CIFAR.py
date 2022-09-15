@@ -5,23 +5,7 @@ import numpy as np
 images_cifar = np.load("experiments/img_cifar.npy")[:64]
 images_cifar = torch.tensor(images_cifar)
 
-N_list = [
-    2,
-    4,
-    8,
-    16,
-    32,
-    64,
-    128,
-    256,
-    512,
-    1024,
-    2048,
-    2 ** 12,
-    2 ** 13,
-    2 ** 14,
-    2 ** 15,
-]
+N_list = [2 ** i for i in range(1, 16)]
 
 errors = []
 with torch.no_grad():
