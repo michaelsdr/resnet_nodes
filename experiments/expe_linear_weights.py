@@ -5,14 +5,6 @@ import random
 
 import numpy as np
 
-rc = {
-    "pdf.fonttype": 42,
-    "text.usetex": True,
-    "text.latex.preview": True,
-}
-
-plt.rcParams.update(rc)
-
 
 def set_all_seeds(seed):
     np.random.seed(seed)

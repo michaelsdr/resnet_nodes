@@ -2,7 +2,7 @@ import torch
 from resnet_ode.models import ResNetMemoryCustom
 import numpy as np
 
-images_cifar = np.load("img_cifar.npy")[:64]
+images_cifar = np.load("experiments/img_cifar.npy")[:64]
 images_cifar = torch.tensor(images_cifar)
 
 N_list = [

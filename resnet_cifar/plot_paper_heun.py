@@ -3,9 +3,7 @@ import torch
 import matplotlib.pyplot as plt
 import numpy as np
 
-rc = {"pdf.fonttype": 42, "text.usetex": True, "text.latex.preview": True}
 
-plt.rcParams.update(rc)
 n_tries = 5
 p = 0.85
 depths = [2, 4, 8, 16, 32, 64]

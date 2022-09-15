@@ -28,7 +28,7 @@ pytest
 ### Experiment in Figure 2 - Illustration of the smoothness of the weights in the linear case
 
 ```bash
-python expe_linear_weights.py
+python experiments/expe_linear_weights.py
 ```
 The plot is saved in the folder figures.
 ### Experiment in Figure 3 - (a) Train models with tied weights
@@ -36,7 +36,7 @@ The plot is saved in the folder figures.
 On CIFAR:
 
 ```bash
-python one_expe_CIFAR_10.py -m 'iresnetauto' --n_layers 8
+python experiments/one_expe_CIFAR_10.py -m 'iresnetauto' --n_layers 8
 ```
 
 the argument --n_layers correspond to the number of residual block per layer.
@@ -44,14 +44,14 @@ the argument --n_layers correspond to the number of residual block per layer.
 On ImageNet (needs cuda):
 
 ```bash
-python one_expe_image_net.py -m 'iresnetauto' --n_layers 8
+python experiments/one_expe_image_net.py -m 'iresnetauto' --n_layers 8
 ```
 
 ### Experiment in Figure 3 - (b) Failure of the adjoint method with a ResNet-101 on ImageNet (needs cuda)
 
 ```bash
-python one_expe_image_net.py --use_backprop True
-python one_expe_image_net.py --use_backprop False
+python experiments/one_expe_image_net.py --use_backprop True
+python experiments/one_expe_image_net.py --use_backprop False
 ```
 
 ### Experiment in Table 2 - Refine pretrained models by untying their weights
@@ -59,13 +59,13 @@ python one_expe_image_net.py --use_backprop False
 For CIFAR (pretrained model is available):
 
 ```bash
-python one_expe_finetuning_CIFAR.py
+python experiments/one_expe_finetuning_CIFAR.py
 ```
 
 For ImageNet (needs cuda and model needs to be pretrained first):
 
 ```bash
-python one_expe_finetuning_imagenet.py
+python experiments/one_expe_finetuning_imagenet.py
 ```
 
 For experiments related to Figures 3 (c) and 4, see next section.
@@ -124,7 +124,7 @@ python plot_grad_dist.py
 To confirm that the memory requirements for the adjoint method are much smaller than for standard backpropagation, you can run from the root folder:
 
 ```bash
-python memory.py
+python experiments/memory.py
 ```
 
 (This can take a few seconds.)
