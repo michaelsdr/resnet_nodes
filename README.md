@@ -1,4 +1,4 @@
-# Code to reproduce the Neurips submission : "_Do Residual Neural Networks discretize Neural Ordinary Differential Equations?_"
+# Code to reproduce the NeurIPS 2022 Paper : "_Do Residual Neural Networks discretize Neural Ordinary Differential Equations?_"
 
 
 
@@ -131,4 +131,12 @@ python experiments/memory.py
 
 Results are plotted in the folder figures.
 
+Cite
+----
 
+If you use this code in your project, please cite::
+
+    Michael E. Sander, Pierre Ablin, Gabriel Peyré
+    Do Residual Neural Networks discretize Neural Ordinary Differential Equations?
+    NeurIPS 2022
+    https://arxiv.org/abs/2205.14612
